@@ -1,4 +1,8 @@
 function Events() {
-  return <></>;
+  return (
+    <>
+      <div></div>
+    </>
+  );
 }
 export default Events;

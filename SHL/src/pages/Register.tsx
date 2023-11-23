@@ -1,8 +1,8 @@
-function Rankings() {
+function Register() {
   return (
     <>
       <div></div>
     </>
   );
 }
-export default Rankings;
+export default Register;

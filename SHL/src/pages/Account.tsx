@@ -1,4 +1,8 @@
 function Account() {
-  return <></>;
+  return (
+    <>
+      <div></div>
+    </>
+  );
 }
 export default Account;

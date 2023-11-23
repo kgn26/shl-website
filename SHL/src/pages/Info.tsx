@@ -1,4 +1,8 @@
 function Info() {
-  return <></>;
+  return (
+    <>
+      <div></div>
+    </>
+  );
 }
 export default Info;
