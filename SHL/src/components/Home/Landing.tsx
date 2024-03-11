@@ -1,4 +1,4 @@
-import "./styles/Landing.css";
+import "./Styles/Landing.css";
 import "animate.css";
 import { useEffect } from "react";
 
