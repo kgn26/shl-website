@@ -26,7 +26,7 @@
 }
 
 .title {
-    font-family: "Lexend", sans-serif;
+    font-family: "Roboto";
     margin-left: 1vw;
     color: white;
 }
@@ -44,7 +44,7 @@
 }
 
 .navbar-items {
-    font-family: "Lexend", sans-serif;
+    font-family: "Roboto";
     color: white;
     margin: 0;
     text-align: center;
