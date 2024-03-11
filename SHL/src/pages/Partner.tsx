@@ -1,8 +1,8 @@
-function Rankings() {
+function Partner() {
   return (
     <>
       <div></div>
     </>
   );
 }
-export default Rankings;
+export default Partner;
