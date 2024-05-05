@@ -11,27 +11,29 @@
 .quote-container {
     width: 100vw;
     height: 100vh;
+    position: relative;
     background-color: var(--bg-primary);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 5em;
     color: var(--text-primary);
     overflow: hidden;
 }
 
 .quote-container p {
-    margin: auto;
+    margin: auto auto 0 auto;
     padding: 0;
     width: 70%;
-    font-size: 3.8em;
+    font-size: 3em;
     font-weight: bold;
     position: relative;
 }
 
 .author {
     height: min-content;
-    margin: auto;
-    font-size: 28px !important;
+    margin: 0 auto auto auto !important;
+    font-size: 2em !important;
 }
 
 .text-purple {
@@ -51,18 +53,54 @@
 #quote-top {
     z-index: 2;
     float: left;
-    width: 6rem;
-    height: calc(6em / 1.29);
-    /* position: relative;
-    top: 5em;
-    left: 10em; */
+    width: 5vw;
+    max-width: 5em;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 7%;
 }
 
 #quote-bot {
-    width: 5rem;
-    height: calc(5em / 1.29);
+    z-index: 2;
+    width: 6vw;
+    max-width: 5em;
+    height: auto;
     float: right;
-    /* position: absolute;
-    top: 40em;
-    left: 75em; */
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    rotate: 45deg;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #quote-top,
+    #quote-bot {
+        display: none;
+    }
+
+    .quote-container p {
+        font-size: 5vw;
+    }
+
+    .author {
+        font-size: 3vw !important;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+
+    .quote-container p {
+        font-size: 6vh;
+    }
+
+    .author {
+        font-size: 4vh !important;
+    }
 }
