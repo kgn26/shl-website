@@ -19,6 +19,8 @@
     gap: 5em;
     color: var(--text-primary);
     overflow: hidden;
+    scroll-snap-stop: always;
+    scroll-snap-align: center;
 }
 
 .quote-container p {

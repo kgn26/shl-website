@@ -12,6 +12,7 @@ div {
     --text-purple: #B84CFF;
     --text-blue: #73C0FE;
     font-family: 'Roboto';
+    --animation-delay: 0.5s;
 }
 
 .how-container {
@@ -25,6 +26,8 @@ div {
     grid-template-rows: repeat(4, 1fr);
     gap: 10%;
     overflow: hidden;
+    scroll-snap-stop: always;
+    scroll-snap-align: center;
 }
 
 .title {
@@ -121,6 +124,14 @@ div {
 
 .hide {
     display: none;
+}
+
+.animate__delay__first {
+    animation-delay: var(--animation-delay);
+}
+
+.animate__delay__second {
+    animation-delay: calc(2*var(--animation-delay));
 }
 
 
